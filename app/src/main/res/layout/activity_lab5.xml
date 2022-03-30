@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lab5_activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Cezar"
+                        style="@style/header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/CodeTable" />
+
+                    <EditText
+                        android:id="@+id/textForCrypt"
+                        style="@style/EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/TextForEncrypt"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/codeWordColumn"
+                        style="@style/EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Кодовое слово для столбцов"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/codeWordString"
+                        style="@style/EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Кодовое слово для строк"
+                        android:inputType="text" />
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/encrypt"
+                            style="@style/Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Encrypt"
+                            app:layout_column="0"
+                            app:layout_gravity="left"
+                            app:layout_row="0" />
+
+                        <Button
+                            android:id="@+id/decrypt"
+                            style="@style/Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Decrypt"
+                            app:layout_gravity="right" />
+                    </androidx.gridlayout.widget.GridLayout>
+
+                    <TextView
+                        android:id="@+id/result"
+                        style="@style/results"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/CodeTableSwap"
+                        style="@style/header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Квадрат Полибия" />
+
+                    <EditText
+                        android:id="@+id/textForPolibiy"
+                        style="@style/EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/TextForEncrypt"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/codeWordForPolibiy"
+                        style="@style/EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Кодовое слово"
+                        android:inputType="text" />
+
+
+                    <Switch
+                        android:id="@+id/sdvigPolibiy"
+                        style="@style/Switch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:text="Сдвиг при шифровании" />
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        >
+
+                        <Button
+                            android:id="@+id/EncryptPolibiy"
+                            style="@style/Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_gravity="left"
+                            android:text="@string/Encrypt" />
+
+                        <Button
+                            android:id="@+id/DecryptPolibiy"
+                            style="@style/Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_gravity="right"
+                            android:text="@string/Decrypt" />
+                    </androidx.gridlayout.widget.GridLayout>
+
+                    <TextView
+                        android:id="@+id/resPolibiy"
+                        style="@style/results"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

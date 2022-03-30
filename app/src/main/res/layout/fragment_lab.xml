@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fon"
+    tools:context=".Lab">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:id="@+id/editTextTextPersonName2"
+                style="@style/headerLabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Лабораторная работа №1" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    style="@style/button_lab"
+                    android:background="@drawable/button_style"
+                    android:onClick="Lab1_launch"
+                    android:src="@drawable/ic_castle" />
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/editTextTextPersonName9"
+                style="@style/headerLabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Лабораторная работа №2 и №3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:src="@drawable/ic_tetris"
+                    android:onClick="Lab2_launch"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:src="@drawable/ic_billshifr"
+                    android:onClick="Lab3_launch"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/headerLabs"
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Лабораторная работа №4" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    style="@style/button_lab"
+                    android:background="@drawable/button_style"
+                    android:src="@drawable/ic_dead_"
+                    android:onClick="Lab4_launch"/>
+            </GridLayout>
+
+            <TextView
+                style="@style/headerLabs"
+                android:id="@+id/editTextTextPersonName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Лабораторная работа №5 и №6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Lab5_launch"
+                    android:background="@drawable/button_style"
+                    android:src="@drawable/ic_hands"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Lab6_launch"
+                    android:background="@drawable/button_style"
+                    android:src="@drawable/ic_bender" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/headerLabs"
+                android:id="@+id/editTextTextPersonName7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Лабораторная работа №7" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    style="@style/button_lab"
+                    android:onClick="Lab7_launch"
+                    android:background="@drawable/button_style"
+                    android:src="@drawable/ic_bitcoins" />
+            </GridLayout>
+
+            <TextView
+                style="@style/headerLabs"
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Лабораторная работа №8 и №9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Lab8_launch"
+                    android:background="@drawable/button_style"
+                    android:src="@drawable/ic_virus_cartoon"  />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="Lab9_launch"
+                    android:background="@drawable/button_style"
+                    android:src="@drawable/ic_lock" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/headerLabs"
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Лабораторная работа №10" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton10"
+                    style="@style/button_lab"
+                    android:onClick="Lab10_launch"
+                    android:background="@drawable/button_style"
+                    android:src="@drawable/ic_hand"  />
+            </GridLayout>
+
+            <TextView
+                style="@style/headerLabs"
+                android:id="@+id/editTextTextPersonName8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Лабораторная работа №11" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton11"
+                    style="@style/button_lab"
+                    android:onClick="Lab11_launch"
+                    android:background="@drawable/button_style"
+                    android:src="@drawable/ic_megaplankton" />
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

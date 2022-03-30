@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Protect</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">123412341234fsadcsdcasd</string>
+    <string name="LR1.2"><b>2 часть 1-ой ЛР</b></string>
+    <string name="title_activity_lab2">lab2_activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Encrypt">Зашифровать</string>
+    <string name="Decrypt">Расшифровать</string>
+    <string name="MagicSquaer">Магический квадрат</string>
+    <string name="CodeTable">Шифрующая таблица</string>
+    <string name="GeneratePasswordAlphabet">Генерация паролей мин длины</string>
+    <string name="GeneratePasswordSymbols">Генерация паролей посимвольно</string>
+    <string name="TextForEncrypt">Текст для шифровки</string>
+    <string name="CezarSystem">Система Цезаря</string>
+    <string name="TrifemusSystem">Система Трисемуса</string>
+    <string name="PlayforSystem">Система Плейфора</string>
+    <string name="koeffForCezar">Коеффициент</string>
+    <string name="Digit">Число</string>
+    <string name="Result">Результат</string>
+    <string name="CowsBulls">Быки и коровы</string>
+    <string name="Tried">Проверить</string>
+    <string name="GiveUp">Сдаться</string>
+    <string name="NumberOfEl">Количество элементов</string>
+    <string name="RSA">Криптосистема RSA</string>
+    <string name="ElGamal">Криптосистема Эль-Гамаля</string>
+    <string name="DigitsForEncrypt">Числовое значение для шифровки</string>
+    <string name="DifiHellman">Криптосистема Дифи-Хилмана</string>
+    <string name="md5">Криптосистема md5</string>
+    <string name="generate">Сгенерировать</string>
+    <string-array name="labs">
+        <item> Лабораторная работа №1. Реализация генератора паролей с заданным параметром </item>
+        <item> Лабораторная работа №2. Шифрование методами перестановки </item>
+        <item> Лабораторная работа №3. Шифрование методами замены </item>
+        <item> Лабораторная работа №4. Реализация генератора псевдослучайной последовательности </item>
+        <item> Лабораторная работа №5. Исследование симметричных криптоалгоритмов </item>
+        <item> Лабораторная работа №6 Исследование ассиметричных крипроалгоритмов </item>
+        <item> Лабораторная работа №7. Исследование криптографических хэш-функций </item>
+        <item> Лабораторная работа №8.Защита от компьютерных вирусов </item>
+        <item> Лабораторная работа №9. Защита программ от несанкционированной эксплуатации и копирования </item>
+        <item> Лабораторная работа №10. Реализация системы защиты ПС </item>
+        <item> Лабораторная работа №11 Защита данных средствами СУБД MS Access </item>
+
+    </string-array>
+    <string name="title_activity_lab8">lab8_activity</string>
+    <string name="codeWord">Ключевое слово</string>
+    <string name="timeEnumeration">Определение времени перебора</string>
+    <string name="minLengthPassword">Вычисление мин. длины пароля</string>
+</resources>
